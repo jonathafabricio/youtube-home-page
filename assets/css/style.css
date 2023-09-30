@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--------------------------header--------------------------*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;  
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #fff;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 4rem;
+}
+
+#sup-esq, 
+#sup-cent, 
+#sup-dir {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#sup-esq {
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-left: 1rem;
+}
+
+#menu {
+    width: 24px;
+    height: 24px;
+}
+
+#logo-yt {
+    width: 90px;
+    height: 20px;
+}
+
+#sup-cent {
+    gap: 0;
+}
+
+#campo-pesquisar {
+    width: 23rem;
+    height: 2.2rem;
+    border: 1px solid #CCC;;
+    border-right: 0px;
+    padding-left: 1rem;
+}
+
+#botao-lupa {
+    width: 2.5rem;
+    height: 2.4rem;
+    border: 1px solid #CCC;;
+    cursor: pointer;
+}
+
+#sup-dir {
+    display: flex;
+    gap: 3rem;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+#avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+}
+
+/*--------------------------aside--------------------------*/
+
+.menu {
+    display: grid;
+    grid-template-columns: 1.5fr 10fr;
+    grid-auto-rows: 56rem;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+#menu-lateral {
+    width: 11.5rem;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 1rem 0.5rem;
+    gap: 1.5rem;
+    background-color: #Fff
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+/*--------------------------main--------------------------*/
+
+.videos {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    overflow: hidden;
+    background-color: #F9F9F9;
+    padding: 2rem;
+    display: grid;
+    align-items: start;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);   
+    margin-bottom: 100px; 
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.thumbnail {
+    width: 85%;
+    position: relative;
+}
+
+.logo-canal {
+    position: relative;
+    top: 10px;
+    left: -90px;
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+}
+
+.descricao {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 65%;
+    position: relative;
+    top: -2.5rem;
+    left: 1.5rem;
+    gap: 3px;
+}
+
+#titulo-video {
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.descricao p {
+    color: #515151;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
